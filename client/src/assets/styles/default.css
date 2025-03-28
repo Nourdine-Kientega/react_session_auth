@@ -1,3 +1,6 @@
+
+/******************************** All Styles *********************/
+
 * {
     margin: 0;
     padding: 0;
@@ -32,7 +35,7 @@ body {
     align-items: center;
 }
 
-.logo i {
+.header-left .logo i {
     font-size: 35px;
     color: #333;
     margin-right: 20px;
@@ -64,6 +67,9 @@ body {
     color: #333;
 }
 
+.header-right .dropdown {
+    position: relative;
+}
 .dropdown-btn {
     background-color: transparent;
     border: none;
@@ -89,6 +95,7 @@ body {
     margin-top: 6rem;
     margin-bottom: 2rem;
     padding: 0 5%;
+    min-height: 67vh;
 }
 
 .course-container {
@@ -143,10 +150,12 @@ body {
     font-size: 14px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    text-decoration: none;
+    color: inherit;
 }
 
 .follow-button:hover {
-    background-color: #fff;
+    background-color: #f1f1f1;
 }
 
 .course-time {
@@ -154,11 +163,154 @@ body {
     color: #999;
 }
 
+
+/******************************** Footer *********************/
+
 .footer {
     width: 100%;
-    /* position: fixed;
-    bottom: 0; */
     text-align: center;
     background: #fff;
     padding: 10px 0;
 }
+
+
+
+/******************************** Form *********************/
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+  }
+  
+  .form-content {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+ .form-content .logo {
+    width: 200px;
+    margin-bottom: 20px;
+  }
+  
+  .title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .input-field {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .input-field:focus {
+    outline: none;
+    border-color: #3498db;
+  }
+  
+  .btn-login {
+    padding: 12px;
+    background-color: #3498db;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .btn-login:hover {
+    background-color: #2980b9;
+  }
+  
+  .signup-text {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .signup-text a {
+    color: #3498db;
+    text-decoration: none;
+  }
+  
+  .signup-text a:hover {
+    text-decoration: underline;
+  }
+
+
+
+
+
+  /* User Panel Styles */
+.user-panel {
+    position: absolute;
+    right: -45px;  
+    top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Card inside the User Panel */
+  .user-panel .card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* User Icon inside the Card */
+  .user-panel .card .user-icon {
+    font-size: 70px;
+    /* color: #3498db; */
+    margin-bottom: 15px;
+  }
+  
+  /* Username inside the Card */
+  .user-panel .card .username {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Logout Button inside the Card */
+  .user-panel .card .btn-logout {
+    padding: 10px 15px;
+    background-color: #e74c3c;
+    color: white;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  /* Button Hover effect */
+  .user-panel .card .btn-logout:hover {
+    background-color: #c0392b;
+  }
