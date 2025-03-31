@@ -1,8 +1,6 @@
 import { CoursesImages } from "../assets";
 import CourseItemComponent from "../components/CourseItemComponent";
 
-
-
 const courses = [
   {
     id: 1,

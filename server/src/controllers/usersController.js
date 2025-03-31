@@ -30,9 +30,6 @@ const loginUser = async (req, res) => {
 
     const { email, password } = req.body;
 
-    console.log(email, password);
-    
-
     try {
         // Check if user exists in the database
         const existingUser = await User.findOne({ email });

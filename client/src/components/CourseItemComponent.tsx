@@ -16,7 +16,7 @@ const CourseItemComponent = ({ image, title, time }: CourseItemComponentProps) =
             <div className="course-content">
                 <h3 className="course-title">{title}</h3>
                 <div className="course-footer">
-                    <a href="#" className="follow-button">Follow Course</a>
+                    <a href="/course" className="follow-button">Follow Course</a>
                     <span className="course-time">{time}</span>
                 </div>
             </div>
