@@ -5,6 +5,7 @@ import cors from 'cors';
 import path from 'path';
 import { connectDB } from './src/config/database.js';
 import usersRouter from './src/routes/usersRoutes.js';
+import courseRouter from './src/routes/coursesRoutes.js';
 
 dotenv.config();
 connectDB(); // Connexion to mongo atlas
@@ -16,6 +17,7 @@ app.use(cors());
 app.use(express.json());
 app.use('/uploads', express.static(path.join('./', '/src/uploads')));
 app.use(usersRouter);
+app.use(courseRouter);
 
 
 app.get('/', (req, res) => {
