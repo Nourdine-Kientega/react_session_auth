@@ -17,16 +17,12 @@ const App = () => {
           <Route path="/" element={<HomeScreen />} />
           <Route path="/login" element={<LoginScreen />} />
           <Route path="/signup" element={<SignupScreen />} />
-          <Route path="/read_course" element={<ReadCourseScreen />} />
+          <Route path="/read_course/:id" element={<ReadCourseScreen />} />
           <Route path="/add_course" element={<AddCourseScreen />} />
         </Routes>
       </Router>
     </LayoutComponent>
   )
 }
-
-{/* <HomeScreen /> */ }
-{/* <LoginScreen /> */ }
-{/* <SignupScreen /> */ }
 
 export default App;

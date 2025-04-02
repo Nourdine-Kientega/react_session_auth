@@ -1,23 +1,20 @@
 
 interface CourseItemComponentProps {
+    id: string;
     image: string;
     title: string;
     time: string;
 };
 
-const CourseItemComponent = ({ image, title, time }: CourseItemComponentProps) => {
+const CourseItemComponent = ({ id, image, title, time }: CourseItemComponentProps) => {
     return (
         <div className="course-card">
-            <img
-                src={image}
-                alt={title}
-                className="course-image"
-            />
+            <img src={`/api/${image}`} alt={title} className="course-image" />
             <div className="course-content">
                 <h3 className="course-title">{title}</h3>
                 <div className="course-footer">
-                    <a href="/course" className="follow-button">Follow Course</a>
-                    <span className="course-time">{time}</span>
+                    <a href={`/read_course/${id}`} className="follow-button">Follow Course</a>
+                    <span className="course-time">{`${time.split(":")[0]+ 'h'}:${time.split(":")[1] + 'min'}`}</span>
                 </div>
             </div>
         </div>
